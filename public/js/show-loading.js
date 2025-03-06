@@ -23,7 +23,7 @@ function updateCache() {
           // 設定到快取區供所有玩家讀取
           // console.log(q)
           firebase.firestore().collection("show-question-display").doc("4Y8hbxjcALNxgn7KE8qm")
-          .update({'answer': q['answer'],
+          .set({'answer': q['answer'],
               'author': q['author'],
               'category': q['category'],
               'desc': q['desc'],

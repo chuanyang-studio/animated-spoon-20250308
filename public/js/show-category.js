@@ -82,7 +82,7 @@ function setCategory(category) {
 
     // 設定分類
     const ref = firebase.firestore().collection('show-category-display').doc('A89mIhkZn1Re2aIhRRDe')
-    ref.update({'current_category': category, 'current_number': 1})
+    ref.set({'current_category': category, 'current_number': 1})
     .then(() => {
         console.log("Document successfully updated!");
         window.location = '/show-loading.html'
