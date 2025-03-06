@@ -1,20 +1,20 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: 有什麼想法建議的嗎
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
+**現有的狀況遇到了什麼問題？**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-**Describe the solution you'd like**
+**如果是你，你會怎麼做？**
 A clear and concise description of what you want to happen.
 
-**Describe alternatives you've considered**
+**還有其他可能的做法嗎？**
 A clear and concise description of any alternative solutions or features you've considered.
 
-**Additional context**
+**有什麼需要補充說明？**
 Add any other context or screenshots about the feature request here.
