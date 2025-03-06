@@ -1,6 +1,12 @@
 # Developer
 給開發者的參考文件
 
+### 架構
+* Firebase Authentication - Google 登入
+* Firebase Firestore - 資料庫
+* Firebase Functions - 後端
+* Firebase Hosting - 前端
+
 ### 環境設定
 
 **Node.js**
