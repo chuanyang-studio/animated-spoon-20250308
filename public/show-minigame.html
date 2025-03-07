@@ -91,8 +91,19 @@
         </div>
       </div>
     </nav>
+    
     <br><br>
     <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <select name="team-container" id="team-container" class="form-select">
+            <option value="隊伍清單">隊伍清單</option>
+          </select>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-5"id="team-fire"></div>
+      </div>
+      <br><br>
       <div class="row">
         <div class="col-4">
           <button class="btn btn-warning card-num" onclick="delayedLoop()"></button>
@@ -322,6 +333,9 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
+
+        // 讀取隊伍資料
+        getAllTeams();
 
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
         // // The Firebase SDK is initialized and available here!
