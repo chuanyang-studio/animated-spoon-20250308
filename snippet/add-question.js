@@ -1,4 +1,17 @@
-// Add a new document with a generated id.
+// Part1: "data"
+// How to ask ChatGPT for help:
+/*
+請依下列需求幫忙出題，
+1. ABCD四選一單選題
+2. ABCD選項之間避免爭議
+3. 告訴我題目是什麼？
+4. 分別告訴我ABCD四個選項是什麼？
+5. 告訴我答案是什麼？
+6. 簡單解釋答案為什麼是這樣？
+7. 出題的方向鎖定在"寄生植物"
+*/
+
+// Part2: "template"
 firebase.firestore().collection("question").add({
     answer: "<column7>",
     author: "ChatGPT",
@@ -17,7 +30,7 @@ firebase.firestore().collection("question").add({
     console.error("新增題目失敗: ", error);
 });
 
-// How to use:
+// Part3: How to use
 // 1. Copy this as template
 // 2. Copy this as data
 // 3. Ask ChatGPT to replace <column1> to <column8> with the corresponding data
