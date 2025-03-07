@@ -47,3 +47,10 @@ function updateUI() {
             .onSnapshot((querySnapshot) => { chartOption4.innerHTML = querySnapshot.size });
           });
 }
+
+/**
+ * 公布答案
+ */
+function showAnswer() {
+  window.location.href = '/show-explain.html';
+}
