@@ -18,7 +18,8 @@
 
 .btn-desc {
     width: 100%;
-    height: 160px;
+    min-height: 160px;
+    height: auto;
     font-size: 1.75em;
     background-color: #FF8A8A;
 }
