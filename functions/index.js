@@ -2,7 +2,7 @@ const {onRequest} = require("firebase-functions/v2/https");
 const admin = require('firebase-admin');
 admin.initializeApp();
 
-exports.truncatePlayerLockDown = onRequest(async (req, res) => {
+exports.truncatePlayerLockDown = onRequest({ cors: true }, async (req, res) => {
     try {
         const collectionRef = admin.firestore().collection('player-lock-down');
         const snapshot = await collectionRef.get();
@@ -26,7 +26,7 @@ exports.truncatePlayerLockDown = onRequest(async (req, res) => {
     }
 });
 
-exports.truncatePlayerCorrectAnswer = onRequest(async (req, res) => {
+exports.truncatePlayerCorrectAnswer = onRequest({ cors: true }, async (req, res) => {
     try {
         const collectionRef = admin.firestore().collection('player-correct-answer');
         const snapshot = await collectionRef.get();
@@ -50,7 +50,7 @@ exports.truncatePlayerCorrectAnswer = onRequest(async (req, res) => {
     }
 });
 
-exports.truncateAlreadyChecked = onRequest(async (req, res) => {
+exports.truncateAlreadyChecked = onRequest({ cors: true }, async (req, res) => {
     try {
         const collectionRef = admin.firestore().collection('already-checked');
         const snapshot = await collectionRef.get();
@@ -74,7 +74,7 @@ exports.truncateAlreadyChecked = onRequest(async (req, res) => {
     }
 });
 
-exports.truncatePlayerAnswerDisplay = onRequest(async (req, res) => {
+exports.truncatePlayerAnswerDisplay = onRequest({ cors: true }, async (req, res) => {
     try {
         const collectionRef = admin.firestore().collection('player-answer-display');
         const snapshot = await collectionRef.get();
