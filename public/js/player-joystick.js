@@ -37,6 +37,17 @@ function updateCorrectUI(useruid) {
 }
 
 /**
+ * 讀取隊伍名稱
+ */
+function getTeam(useruid) {
+  firebase.firestore().collection('user').where('user', '==', useruid)
+  .onSnapshot((querySnapshot) => {
+    const btnTeam = document.querySelector('.btn-meta')
+    btnTeam.innerHTML = querySnapshot.docs[0].data()['team']
+  })
+}
+
+/**
  * 鎖定答案
  */
 function saveAnswer() {

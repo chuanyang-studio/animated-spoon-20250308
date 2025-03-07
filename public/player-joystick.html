@@ -78,7 +78,11 @@
           <br>
           <div class="row">
             <div class="col-1"></div>
-            <div class="col-5"><button class="btn btn-meta disabled">觀眾</button></div>
+            <div class="col-10"><button class="btn btn-meta disabled">觀眾</button></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-1"></div>
             <div class="col-5"><button class="btn btn-correct disabled">🔥0</button></div>
           </div>
         </div>
@@ -172,6 +176,9 @@
 
             // 更新答題數
             updateCorrectUI(user.uid)
+
+            // 讀取隊伍名稱
+            getTeam(user.uid)
           } else {
             // No user is signed in.
             window.location = '/player-login.html'
