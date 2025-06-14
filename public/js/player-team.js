@@ -2,7 +2,7 @@
  * 取得所有隊伍
  */
 function getAllTeams() {
-    firebase.firestore().collection('scoreboard')
+    firebase.firestore().collection('scoreboard').orderBy('name')
     .onSnapshot((querySnapshot) => {
       // alert(querySnapshot.size)
       querySnapshot.forEach((doc) => {

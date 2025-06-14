@@ -2,7 +2,7 @@
  * 讀取隊伍資料
  */
 function getAllTeams() {
-    firebase.firestore().collection('scoreboard')
+    firebase.firestore().collection('scoreboard').orderBy('name')
     .get()
     .then((querySnapshot) => {
         const teamContainer = document.getElementById('team-container')
