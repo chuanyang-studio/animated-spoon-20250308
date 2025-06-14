@@ -259,6 +259,7 @@
             if (result[index][2] == 'op1') {
               newScore = parseInt(oldScore) * result[index][3]
             } else if (result[index][2] == 'op2') {
+              if (oldScore <= 0) { oldScore = 0 }
               newScore = parseInt(Math.sqrt(parseInt(oldScore)))
             } else if (result[index][2] == 'op3') {
               newScore = parseInt(oldScore) + result[index][3]
